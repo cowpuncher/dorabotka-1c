@@ -176,15 +176,15 @@ ANCHOR Buttons style
     font-size: 16px;
 }
 
-.btn.button-lg {
+.button-lg {
     height: 83px;
 }
 
-.btn.button-lg {
+.button-md {
     height: 71px;
 }
 
-.btn.button-sm {
+.button-sm {
     height: 60px;
     letter-spacing: var(--letter-spacing-2);
     padding: 20px 40px;
@@ -442,6 +442,113 @@ address.footerTopAddress {
 }
 
 /* ANCHOR -- PAGES */
+/* 
+ANCHOR Page Main 
+*/
+.page-main .wrapper {
+    padding: 73px 0 0 0;
+}
+
+.topOffer {
+    max-width: 640px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 45px;
+}
+
+.topOffer p {
+    display: inline-block;
+    margin: 22px 0 30px;
+}
+
+.topOffer p img {
+    margin-right: 10px;
+}
+
+.topOfferButtons .btn {
+    padding: 0 42px;
+    letter-spacing: var(--letter-spacing-2);
+    font-size: 21px;
+    font-weight: 600;
+    -webkit-border-radius: var(--border-radius-2);
+       -moz-border-radius: var(--border-radius-2);
+            border-radius: var(--border-radius-2);
+}
+
+.animateChat {
+    padding: 0 30px;
+    overflow: hidden;
+    max-width: 465px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 160%;
+    min-height: 360px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.animateChat .img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+         border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 17px;
+    width: 44px;
+    height: 44px;
+}
+
+.animateChatItemClient,
+.animateChatItemPerformer {
+    border: 1px solid;
+    width: 328px;
+    min-height: 89px;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.animateChatItemClient {
+    border-color: var(--color-3);
+    -webkit-border-radius: 25px 25px 0 25px;
+       -moz-border-radius: 25px 25px 0 25px;
+            border-radius: 25px 25px 0 25px;
+    
+}
+
+.animateChatItemAuthor {
+    opacity: .5;
+}
+
+.animateChatItemPerformer {
+    margin: 23px 0;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    border-color: var(--color-1);
+    -webkit-border-radius: 25px 25px 25px 0;
+       -moz-border-radius: 25px 25px 25px 0;
+            border-radius: 25px 25px 25px 0;
+}
+
+.animateChatItemClient .img {
+    left: -30px;
+}
+
+.animateChatItemPerformer .img {
+    right: -25px;
+}
+
 /* 
 ANCHOR Page 404 
 */
