@@ -550,10 +550,10 @@ ANCHOR Page Main
 }
 
 .animateChatItemClientFirst {
-    -webkit-animation-duration: 3s;
-       -moz-animation-duration: 3s;
-         -o-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-name: animateChatItemTop;
        -moz-animation-name: animateChatItemTop;
          -o-animation-name: animateChatItemTop;
@@ -561,34 +561,34 @@ ANCHOR Page Main
 }
 
 .animateChatItemPerformer {
-    -webkit-animation-duration: 5s;
-       -moz-animation-duration: 5s;
-         -o-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-name: animateChatItemTop;
-       -moz-animation-name: animateChatItemTop;
-         -o-animation-name: animateChatItemTop;
-            animation-name: animateChatItemTop;
+    -webkit-animation-duration: 3s;
+       -moz-animation-duration: 3s;
+         -o-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: animateChatItemCentre;
+       -moz-animation-name: animateChatItemCentre;
+         -o-animation-name: animateChatItemCentre;
+            animation-name: animateChatItemCentre;
 }
 
 .animateChatItemClientLast {
-    -webkit-animation-name: animateChatItemTop;
-       -moz-animation-name: animateChatItemTop;
-         -o-animation-name: animateChatItemTop;
-            animation-name: animateChatItemTop;
-    -webkit-animation-duration: 6s;
-       -moz-animation-duration: 6s;
-         -o-animation-duration: 6s;
-            animation-duration: 6s;
+    -webkit-animation-name: animateChatItemBottom;
+       -moz-animation-name: animateChatItemBottom;
+         -o-animation-name: animateChatItemBottom;
+            animation-name: animateChatItemBottom;
+    -webkit-animation-duration: 4s;
+       -moz-animation-duration: 4s;
+         -o-animation-duration: 4s;
+            animation-duration: 4s;
 
 }
 
 @-webkit-keyframes animateChatItemTop {
     from {
-        -webkit-transform: translate(0, 350%);
-                -moz-transform: translate(0, 350%);
-                  -o-transform: translate(0, 350%);
-             transform: translate(0, 350%);
+        -webkit-transform: translate(0, 500px);
+                -moz-transform: translate(0, 500px);
+                  -o-transform: translate(0, 500px);
+             transform: translate(0, 500px);
     }
     to {
         -webkit-transform: translate(0, 0);
@@ -600,10 +600,10 @@ ANCHOR Page Main
 
 @-moz-keyframes animateChatItemTop {
     from {
-        -webkit-transform: translate(0, 450%);
-                -moz-transform: translate(0, 450%);
-                  -o-transform: translate(0, 450%);
-             transform: translate(0, 450%);
+        -webkit-transform: translate(0, 500px);
+                -moz-transform: translate(0, 500px);
+                  -o-transform: translate(0, 500px);
+             transform: translate(0, 500px);
     }
     to {
         -webkit-transform: translate(0, 0);
@@ -615,10 +615,10 @@ ANCHOR Page Main
 
 @-o-keyframes animateChatItemTop {
     from {
-        -webkit-transform: translate(0, 450%);
-                -moz-transform: translate(0, 450%);
-                  -o-transform: translate(0, 450%);
-             transform: translate(0, 450%);
+        -webkit-transform: translate(0, 500px);
+                -moz-transform: translate(0, 500px);
+                  -o-transform: translate(0, 500px);
+             transform: translate(0, 500px);
     }
     to {
         -webkit-transform: translate(0, 0);
@@ -630,10 +630,130 @@ ANCHOR Page Main
 
 @keyframes animateChatItemTop {
     from {
-        -webkit-transform: translate(0, 450%);
-                -moz-transform: translate(0, 450%);
-                  -o-transform: translate(0, 450%);
-             transform: translate(0, 450%);
+        -webkit-transform: translate(0, 500px);
+                -moz-transform: translate(0, 500px);
+                  -o-transform: translate(0, 500px);
+             transform: translate(0, 500px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes animateChatItemCentre {
+    from {
+        -webkit-transform: translate(0,  2000px);
+                -moz-transform: translate(0, 2000px);
+                  -o-transform: translate(0, 2000px);
+             transform: translate(0, 2000px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes animateChatItemCentre {
+    from {
+        -webkit-transform: translate(0,  2000px);
+                -moz-transform: translate(0, 2000px);
+                  -o-transform: translate(0, 2000px);
+             transform: translate(0, 2000px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes animateChatItemCentre {
+    from {
+        -webkit-transform: translate(0,  2000px);
+                -moz-transform: translate(0, 2000px);
+                  -o-transform: translate(0, 2000px);
+             transform: translate(0, 2000px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@keyframes animateChatItemCentre {
+    from {
+        -webkit-transform: translate(0,  2000px);
+                -moz-transform: translate(0, 2000px);
+                  -o-transform: translate(0, 2000px);
+             transform: translate(0, 2000px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes animateChatItemBottom {
+    from {
+        -webkit-transform: translate(0, 3500px);
+                -moz-transform: translate(0,3500px);
+                  -o-transform: translate(0,3500px);
+             transform: translate(0,3500px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes animateChatItemBottom {
+    from {
+        -webkit-transform: translate(0, 3500px);
+                -moz-transform: translate(0,3500px);
+                  -o-transform: translate(0,3500px);
+             transform: translate(0,3500px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes animateChatItemBottom {
+    from {
+        -webkit-transform: translate(0, 3500px);
+                -moz-transform: translate(0,3500px);
+                  -o-transform: translate(0,3500px);
+             transform: translate(0,3500px);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@keyframes animateChatItemBottom {
+    from {
+        -webkit-transform: translate(0, 3500px);
+                -moz-transform: translate(0,3500px);
+                  -o-transform: translate(0,3500px);
+             transform: translate(0,3500px);
     }
     to {
         -webkit-transform: translate(0, 0);

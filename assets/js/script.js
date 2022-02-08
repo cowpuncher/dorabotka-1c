@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    changeText('#animateChatItemFirst', '#animateChatItem1', 0 , 10);
-    changeText('#animateChatItemSecond', '#animateChatItem2', 2000 , 10);
-    changeText('#animateChatItemThird', '#animateChatItem3', 3000, 10);
+    changeText('#animateChatItemFirst', '#animateChatItem1', 0 , 1);
+    changeText('#animateChatItemSecond', '#animateChatItem2', 1500 , 1);
+    changeText('#animateChatItemThird', '#animateChatItem3', 3000, 1);
  }, false);
 
 
