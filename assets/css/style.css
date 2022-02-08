@@ -549,6 +549,100 @@ ANCHOR Page Main
     right: -25px;
 }
 
+.animateChatItemClientFirst {
+    -webkit-animation-duration: 3s;
+       -moz-animation-duration: 3s;
+         -o-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: animateChatItemTop;
+       -moz-animation-name: animateChatItemTop;
+         -o-animation-name: animateChatItemTop;
+            animation-name: animateChatItemTop;
+}
+
+.animateChatItemPerformer {
+    -webkit-animation-duration: 5s;
+       -moz-animation-duration: 5s;
+         -o-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: animateChatItemTop;
+       -moz-animation-name: animateChatItemTop;
+         -o-animation-name: animateChatItemTop;
+            animation-name: animateChatItemTop;
+}
+
+.animateChatItemClientLast {
+    -webkit-animation-name: animateChatItemTop;
+       -moz-animation-name: animateChatItemTop;
+         -o-animation-name: animateChatItemTop;
+            animation-name: animateChatItemTop;
+    -webkit-animation-duration: 6s;
+       -moz-animation-duration: 6s;
+         -o-animation-duration: 6s;
+            animation-duration: 6s;
+
+}
+
+@-webkit-keyframes animateChatItemTop {
+    from {
+        -webkit-transform: translate(0, 350%);
+                -moz-transform: translate(0, 350%);
+                  -o-transform: translate(0, 350%);
+             transform: translate(0, 350%);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes animateChatItemTop {
+    from {
+        -webkit-transform: translate(0, 450%);
+                -moz-transform: translate(0, 450%);
+                  -o-transform: translate(0, 450%);
+             transform: translate(0, 450%);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes animateChatItemTop {
+    from {
+        -webkit-transform: translate(0, 450%);
+                -moz-transform: translate(0, 450%);
+                  -o-transform: translate(0, 450%);
+             transform: translate(0, 450%);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
+@keyframes animateChatItemTop {
+    from {
+        -webkit-transform: translate(0, 450%);
+                -moz-transform: translate(0, 450%);
+                  -o-transform: translate(0, 450%);
+             transform: translate(0, 450%);
+    }
+    to {
+        -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                  -o-transform: translate(0, 0);
+             transform: translate(0, 0);
+    }
+}
+
 /* 
 ANCHOR Page 404 
 */

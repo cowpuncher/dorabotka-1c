@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     changeText('#animateChatItemFirst', '#animateChatItem1', 0 , 10);
-    changeText('#animateChatItemSecond', '#animateChatItem2', 3000 , 0);
-    changeText('#animateChatItemThird', '#animateChatItem3', 5000, 5);
+    changeText('#animateChatItemSecond', '#animateChatItem2', 2000 , 10);
+    changeText('#animateChatItemThird', '#animateChatItem3', 3000, 10);
  }, false);
 
 
