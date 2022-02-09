@@ -782,7 +782,7 @@ ANCHOR (Animation cart)
 }
 
 /* 
-ANCHOR (Tariff table)
+ANCHOR (Section-Tariff table)
 */
 
 .tariffWraper {
@@ -889,7 +889,7 @@ ANCHOR (Tariff table)
 }
 
 /* 
-ANCHOR (Partners)
+ANCHOR (Section-Partners)
 */
 
 .partners-section {
@@ -932,6 +932,32 @@ ANCHOR (Partners)
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+}
+
+/* 
+ANCHOR (Section-Services)
+*/
+
+.services {
+    padding-top: 140px;
+    position: relative;
+    z-index: 0;
+}
+
+.services:before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 120%;
+    top: 0;
+    left: -40px;
+    position: absolute;
+    z-index: -1;
+    background: var(--color-1) url(../img/services-bg.png) no-repeat 0 0;
+}
+
+.services .titleSection {
+    font-size: 42px;
 }
 
 /* 
