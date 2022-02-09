@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    const partnersSlider = new Swiper('.partnersSlider', { 
+        slidesPerView: 6,
+        watchOverflow: true, 
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+      });
+
+
+    // Text animated
     const changeText = (outer, inner, time, speed) => {
         let typed = new Typed(outer, {
             stringsElement: inner,

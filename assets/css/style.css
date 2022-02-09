@@ -457,6 +457,8 @@ ANCHOR Page Main
 
 .page-main .header {
     background: url(../img/main-page-bg.png) no-repeat 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .page-main .wrapper {
@@ -785,6 +787,9 @@ ANCHOR (Tariff table)
 
 .tariffWraper {
     padding-top: 206px;
+    background: url(../img/table-bg.png) no-repeat -100% 62%;
+    position: relative;
+    z-index: 0;
 }
 
 .tariff {
@@ -888,9 +893,45 @@ ANCHOR (Partners)
 */
 
 .partners-section {
-    padding-top: 130px;
+    padding: 103px 0 55px;
+    color: var(--color-4);
+}
+
+.partners-section .titleSection {
+    max-width: 425px;
+    font-weight: 600;
+}
+
+.partners {
+    margin-top: 35px;
+    overflow: hidden;
     position: relative;
-    z-index: -2;
+}
+
+.partners .swiper-wrapper {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.partners  .swiper-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* 
