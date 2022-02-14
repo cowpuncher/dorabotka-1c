@@ -20,6 +20,7 @@
 
     --box-shadow-1: 10px 14px 84px rgba(0, 0, 0, 0.25);
     --box-shadow-2: 0px 14px 34px rgba(0, 0, 0, 0.15);
+    --box-shadow-3: -10px 64px 114px rgba(26, 179, 148, 0.3);
     
     --border-radius-1: 5px;
     --border-radius-2: 10px;
@@ -120,6 +121,13 @@ select:-webkit-autofill:focus {
        -moz-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+}
+.ais {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+       -moz-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 .jcsb {
     -webkit-box-pack: justify;
@@ -948,7 +956,7 @@ ANCHOR (Section-Services)
     content: '';
     display: block;
     width: 100vw;
-    height: 120%;
+    height: 100%;
     top: 0;
     left: -40px;
     position: absolute;
@@ -958,6 +966,106 @@ ANCHOR (Section-Services)
 
 .services .titleSection {
     font-size: 42px;
+}
+
+.servicesList {
+    position: relative;
+    margin-top: 30px;
+    
+}
+
+.servicesList:before {
+    content: '';
+    height: 99%;
+    width: 1000vh;
+    border-top: 1px solid #53C1A9;
+    display: block;
+    border-bottom: 1px solid #53C1A9;
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+.servicesListItem {
+    padding: 42px 0 30px;
+}
+
+.servicesListItem:not(:last-child) {
+    border-right: 1px solid #53C1A9;
+    width: 50%;
+}
+
+.servicesListItem:not(:first-child) {
+    padding-left: 30px;
+}
+  
+.servicesListItemTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.servicesListItemImg {
+    margin-bottom: 8px;
+    height: 25px;
+}
+
+.videosPopup {
+    margin-top: 50px;
+}
+
+.videosPopup .video {
+    position: relative;
+    width: 49%;
+}
+
+.videosPopup .video .videoImg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.videosPopup .videoWrap {
+    position: absolute;
+    bottom: 5px;
+    left: 35px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.videosPopup .videoPlay {
+    width: 83px;
+    height: 83px;
+    margin-right: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+}
+
+.videosPopup h6.videoTitle {
+    font-size: 20px;
 }
 
 /* 
