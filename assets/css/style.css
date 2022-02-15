@@ -21,6 +21,7 @@
     --box-shadow-1: 10px 14px 84px rgba(0, 0, 0, 0.25);
     --box-shadow-2: 0px 14px 34px rgba(0, 0, 0, 0.15);
     --box-shadow-3: -10px 64px 114px rgba(26, 179, 148, 0.3);
+    --box-shadow-4: -10px 64px 114px rgba(211, 211, 211, 0.3);
     
     --border-radius-1: 5px;
     --border-radius-2: 10px;
@@ -901,7 +902,7 @@ ANCHOR (Section-Partners)
 */
 
 .partners-section {
-    padding: 103px 0 55px;
+    padding: 103px 0 660px;
     color: var(--color-4);
 }
 
@@ -945,6 +946,9 @@ ANCHOR (Section-Partners)
 /* 
 ANCHOR (Section-Services)
 */
+.services-section {
+    margin-top: -610px;
+}
 
 .services {
     padding-top: 140px;
@@ -962,6 +966,9 @@ ANCHOR (Section-Services)
     position: absolute;
     z-index: -1;
     background: var(--color-1) url(../img/services-bg.png) no-repeat 0 0;
+    -webkit-box-shadow: var(--box-shadow-3);
+       -moz-box-shadow: var(--box-shadow-3);
+            box-shadow: var(--box-shadow-3);
 }
 
 .services .titleSection {
@@ -1017,6 +1024,7 @@ ANCHOR (Section-Services)
 .videosPopup .video {
     position: relative;
     width: 49%;
+    height: 350px;
 }
 
 .videosPopup .video .videoImg {
@@ -1028,7 +1036,7 @@ ANCHOR (Section-Services)
 
 .videosPopup .videoWrap {
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     left: 35px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1066,6 +1074,166 @@ ANCHOR (Section-Services)
 
 .videosPopup h6.videoTitle {
     font-size: 20px;
+}
+
+/* 
+ANCHOR (Section-Review)
+*/
+
+.review {
+    padding: 70px 0 0;
+    position: relative;
+}
+
+img.reviewImgBg {
+    position: absolute;
+    top: -225%;
+    left: -21%;
+    z-index: -1;
+}
+
+.reviewSlider {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 113px;
+}
+
+.reviewSlider .swiper-pagination-bullet {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: 0;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+.reviewSlider  .swiper-pagination-bullet:not(:first-child) {
+    margin-left: 95px!important;
+}
+
+.reviewSlider .swiper-slide {
+    font-weight: 500;
+    padding-right: 150px;
+    font-size: 24px;
+    line-height: 42px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.reviewSlider  .swiper-pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.review h2.titleSection {
+    margin-bottom: 65px;
+}
+
+.review .quote {
+    margin-right: 30px;
+}
+
+.reviewSlider .swiper-slide p {
+    margin-top: -10px;
+}
+
+/* 
+ANCHOR (Section-How work)
+*/
+
+.howWork {
+    position: relative;
+    color: var(--color-4);
+    margin-top: 55px;
+    padding-top: 40px;
+}
+
+.howWorkBg {
+    position: absolute;
+    left: -30%;
+    top: -141%;
+    z-index: -1;
+}
+
+.howWork .titleSection {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.howWork:before {
+    background: var(--color-3);
+    width: 100vw;
+    height: 120%;
+    left: -40px;
+    top: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    -webkit-box-shadow: var(--box-shadow-4);
+       -moz-box-shadow: var(--box-shadow-4);
+            box-shadow: var(--box-shadow-4);
+}
+
+.howWorkList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+
+.howWorkItem {
+    padding-top: 43px;
+    line-height: 23px;
+    position: relative;
+    width: 25%;
+}
+
+.howWorkItem:last-of-type {
+    padding-left: 55px;
+}
+
+.howWorkItem:not(:last-child)::after {
+    content: url(../img/howWorkArrow.png);
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+
+.howWorkList .howWorkItem::before {
+    content: ".0" counter(list-item) "";
+    color: var(--color-1);
+    position: absolute;
+    top: 0;
+}
+
+.howWork .btn {
+    padding: 17px 30px;
+    position: relative;
+    -webkit-border-radius: var(--border-radius-2);
+       -moz-border-radius: var(--border-radius-2);
+            border-radius: var(--border-radius-2);
 }
 
 /* 
