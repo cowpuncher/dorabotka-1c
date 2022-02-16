@@ -365,6 +365,29 @@ ANCHOR Section feedback
     margin-bottom: 32px;
 }
 
+.feedbackListItem p {
+    font-size: 16px;
+    line-height: 150%;  
+    color: #9EE3D5;
+}
+
+.feedbackListItem p:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.feedbackListItemTitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.feedbackListItem {
+    width: 47%;
+}
+
+.feedbackList {
+    padding-bottom: 35px;
+}
+
 /* 
 ANCHOR Footer
 */
@@ -473,6 +496,11 @@ ANCHOR Page Main
 .page-main .wrapper {
     padding: 73px 0 0 0;
 }
+
+.page-main .feedback {
+    padding-top: 130px;
+}
+
 
 .topOffer {
     max-width: 640px;
