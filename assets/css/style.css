@@ -487,13 +487,13 @@ ANCHOR Page Main
     overflow: hidden;
 }
 
-.page-main .header {
+.bg-image.header {
     background: url(../img/main-page-bg.png) no-repeat 0 0;
     position: relative;
     z-index: 1;
 }
 
-.page-main .wrapper {
+.mainWrapper .wrapper {
     padding: 73px 0 0 0;
 }
 
@@ -1283,4 +1283,122 @@ ANCHOR Page 404
     max-width: 425px;
     width: 100%;
     margin-right: 45px;
+}
+
+
+/* 
+ANCHOR Page Product 
+*/
+.page-product .wrapper {
+    padding-top: 58px;
+}
+
+.page-product .title {
+    margin-bottom: 30px;
+}
+
+.page-product .topOfferButtons {
+    margin-top: 35px;
+}
+
+.mainList li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.mainList li:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.mainList li:before {
+    content: '';
+    width: 24px;
+    height: 15px;
+    display: block;
+    background: url(../img/icons/checked-table.svg) no-repeat 0 0 / contain;
+    position: absolute;
+    left: 0;
+    z-index: 9999;
+    top: 5px;
+}
+
+
+
+/* 
+ANCHOR (Section-Table) 
+*/
+
+.productBoard {
+    margin-top: 70px;
+    color: var(--color-4);
+    position: relative;
+}
+
+.productBoard:before {
+    content: '';
+    display: block;
+    background: var(--color-3);
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: -75px;
+}
+
+.productBoardTopInfo,
+.productBoardTopDocs {
+    padding-top: 55px;
+    position: relative;
+}
+
+.productBoardTop .titleSection {
+    margin-bottom: 30px;
+}
+
+.productBoard .mainList li:before {
+    width: 15px;
+    height: 11px;
+}
+
+.productBoard  .mainList li {
+    padding-left: 25px;
+    line-height: 150%;
+}
+
+.productBoardTopInfo {
+    width: 100%;
+    padding-right: 75px;
+}
+
+.productBoardTopDocs {
+    width: 50%;
+    position: relative;
+    padding-left: 75px;
+}
+
+.productBoardTopDocs:before {
+    content: '';
+    display: block;
+    background: var(--color-1);
+    opacity: .07;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 15px;
+}
+
+.productBoardTopInfo .mainList li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.productBoardTopDocs a {
+    color: var(--color-1);
+    font-weight: 600;
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.productBoardTopDocs a:not(:last-of-type) {
+    margin-bottom: 19px;
 }
