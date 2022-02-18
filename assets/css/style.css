@@ -1289,6 +1289,11 @@ ANCHOR Page 404
 /* 
 ANCHOR Page Product 
 */
+
+.mainWrapper.page-product {
+    overflow: hidden;
+}
+
 .page-product .wrapper {
     padding-top: 58px;
 }
@@ -1367,6 +1372,7 @@ ANCHOR (Section-Table)
 .productBoardTopInfo {
     width: 100%;
     padding-right: 75px;
+    padding-bottom: 55px;
 }
 
 .productBoardTopDocs {
@@ -1402,3 +1408,83 @@ ANCHOR (Section-Table)
 .productBoardTopDocs a:not(:last-of-type) {
     margin-bottom: 19px;
 }
+
+.productBoardSlider {
+    position: relative;
+}
+
+.productBoardSlider:before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100vw;
+    background: var(--color-4);
+    opacity: .1;
+    left: -75px;
+}
+
+.productBoardSliderItem {
+    max-width: 505px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-right: 1px solid #4646461a;
+    padding: 53px 60px 20px 0px;
+}
+
+.productBoardSliderItem:not(:first-of-type) {
+    padding-left: 50px;
+}
+
+.productBoardSliderItemImg {
+    width: 76px;
+    height: 76px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.productBoardSliderItemAbout {
+    width: 77%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.productBoardSliderItemAbout .name {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.productBoardSliderItemAbout  .label {
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.productBoardSliderItemAbout .desc {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
