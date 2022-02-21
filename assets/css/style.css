@@ -1591,6 +1591,13 @@ ANCHOR (Section-Product Review)
     padding: 45px 0 0;
 }
 
+.page-product .review-section {
+    background-image: url(../img/review-sepia.png);
+    background-repeat: no-repeat;
+    background-position: 0 23%;
+}
+
+
 .page-product .reviewSlider .swiper-slide {
     padding-left: 115px;
     position: relative;
