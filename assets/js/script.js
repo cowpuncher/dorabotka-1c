@@ -29,6 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
         },
       },
     });
+    //Review slider 
+    const productBoardSlider = new Swiper('.productBoardSlider', { 
+      slidesPerView: 2,
+      watchOverflow: true,     
+      pagination: {
+        el: '.swiper-paginations',
+        type: 'bullets',
+        clickable: true,
+      },
+    });
     // add Image preview
     let previewBulletImages = document.querySelectorAll('.previewBulletImages img');
     let previewBulletSpan = document.querySelectorAll('.swiper-pagination span');
