@@ -86,6 +86,117 @@ select:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
 } 
 
+/*
+ANCHOR Range Custom 
+*/
+
+input[type=range] {
+    -webkit-appearance: none; 
+    width: 100%;
+    background: transparent; 
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+  
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #1ab394;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background: #1ab394;
+    cursor: pointer;
+    margin-top: -14px; 
+    -webkit-box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+            box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394; 
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+            box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+    border: 1px solid #1ab394;
+    height: 40px;
+    width: 40px;
+    -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: #1ab394;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #0d0d0d;
+    border: 1px solid #1ab394;
+    height: 40px;
+    width: 40px;
+    background: #1ab394;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+            box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+    background: #1ab394;
+    border: 0.2px solid #1ab394;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #1ab394;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    -moz-box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+            box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+    background: #1ab394;
+    border: 0.2px solid #1ab394;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #1ab394;
+    border: 0.2px solid #1ab394;
+    box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #1ab394;
+}
+input[type=range]::-ms-fill-upper {
+    background: #1ab394;
+    border: 0.2px solid #1ab394;
+    box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #1ab394;
+}
+
 /*ANCHOR Flexbox элементы и контейнет*/
 
 .container {
@@ -93,6 +204,10 @@ select:-webkit-autofill:focus {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.tac {
+    text-align: center;
 }
 
 .dFlex {
@@ -183,7 +298,11 @@ ANCHOR Buttons style
 .btn {
     letter-spacing: var(--letter-spacing-1);
     background: transparent;
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     border: 0;
     color: var(--color-3);
     cursor: pointer;
@@ -1327,8 +1446,6 @@ ANCHOR Page Product
     top: 5px;
 }
 
-
-
 /* 
 ANCHOR (Section-Table) 
 */
@@ -1650,4 +1767,193 @@ ANCHOR (Section-Product Review)
 .authorReview .position {
     font-weight: 500;
     font-size: 11px;    
+}
+
+
+/* 
+ANCHOR Page Calculator 
+*/
+
+.page-calculator {
+    background-image: url(../img/calc-sepia.png);
+    background-repeat: no-repeat;
+    background-position: 21% 0%;
+}
+
+.page-calculator .title {
+    margin: 40px 0 35px;
+}
+
+/* 
+ANCHOR (Section - Price) 
+*/
+
+.priceBlock {
+    margin: 0 -44px;
+    -webkit-box-shadow: var(--box-shadow-1);
+       -moz-box-shadow: var(--box-shadow-1);
+            box-shadow: var(--box-shadow-1);
+}
+
+.priceBlock .col {
+    width: 50%;
+    background: var(--color-3);
+    color: var(--color-4);
+    padding: 70px 0;
+}
+
+.priceBlock .col:not(:last-of-type) {
+    border-right: 1px solid rgb(70 70 70 / 10%);
+}
+
+.priceBlockCount {
+    font-weight: 600;
+    font-size: 44px;   
+    margin-bottom: 15px;
+    display: block; 
+}
+
+.priceBlockDesc {
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+
+.priceBlockBtn {
+    height: 60px;
+    padding: 0 40px;
+    -webkit-border-radius: var(--border-radius-2);
+       -moz-border-radius: var(--border-radius-2);
+            border-radius: var(--border-radius-2);
+}
+
+/* 
+ANCHOR (Section - Privelege) 
+*/
+
+.privelege-section {
+    padding: 45px 0 55px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.privelegeItem {
+    width: 21%;
+}
+
+.privelegeItemTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* 
+ANCHOR (Section - Calculator) 
+*/
+
+.calculator-section {
+    padding-bottom: 100px;
+}
+
+.calculator {
+    border: 4px solid #FFFFFF;
+    margin: 0 -45px;
+    padding: 42px 42px 52px 42px;
+    position: relative;
+    -webkit-box-shadow: var(--box-shadow-1);
+       -moz-box-shadow: var(--box-shadow-1);
+            box-shadow: var(--box-shadow-1);
+}
+
+.calculator .titleSection {
+    min-width: 355px;
+}
+
+.calculatorTop {
+    margin-bottom: 45px;
+}
+
+.calculatorTopText {
+    line-height: 150%;
+    width: auto;
+    margin-left: 40px;
+    position: relative;
+}
+
+.calculatorTopText:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 42px;
+    height: 2px;
+    background: var(--color-1);
+    bottom: 10px;
+    left: 0;
+}
+
+.calculatorItemLabel {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.calculatorItemInput {
+    color: #42506F;
+    font-weight: bold;
+    font-size: 36px;    
+}
+
+.calculatorItemDiscount {
+    color: var(--color-1);
+    font-weight: bold;
+    font-size: 36px;    
+}
+
+.calculatorItemCount {
+    color: var(--color-3);
+}
+
+.calculatorRangeWrap {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    line-height: 1em;
+    z-index: 6;
+    width: 100%;
+}
+
+#calculatorRange {
+    width: 100%;
+}
+
+.calcBtn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60px;
+    padding: 0 40px;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+}
+
+.calculatorBottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -50px;
+    font-weight: 500;
+    font-size: 11px;
 }

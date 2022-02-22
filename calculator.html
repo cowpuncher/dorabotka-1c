@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body class="bg-dark">
-    <div class="wrapper page-404">
+    <div class="wrapper page-calculator">
         <header class="header">
             <div class="container">
                 <div class="topPanel dFlex aic jcsb">
@@ -62,22 +62,162 @@
                         <span></span>
                     </button>                    
                 </div>
-                <div class="dFlex aic wrapper-404">
-                    <div class="col">
-                        <h1 class="title">
-                            Похоже вы не туда попали
-                        </h1>
-                        <a href="#" class="btn button-sm bg-green">
-                            Перейти на главную
+                <h1 class="title">
+                    Цены
+                </h1>
+                <div class="priceBlock dFlex">
+                    <div class="col tac">
+                        <span class="priceBlockCount">
+                            990 руб/час.
+                        </span>
+                        <p class="priceBlockDesc">
+                            Задачу начнет делать первый свободный <br> программист 1С
+                        </p>
+                        <a href="#" class="priceBlockBtn dFlex aic jcc btn bg-green">
+                            Выбрать этот тариф
                         </a>
                     </div>
-                    <div class="col">
-                        <img src="./assets/img/404.png" alt="404" class="img-404">
+                    <div class="col tac">
+                        <span class="priceBlockCount">
+                            9900 руб/час.
+                        </span>
+                        <p class="priceBlockDesc">
+                            Выделенный Программист 1С с <br> опытом не менее 5 лет
+                        </p>
+                        <a href="#" class="priceBlockBtn dFlex aic jcc btn bg-green">
+                            Выбрать этот тариф
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
         <main>
+            <section class="privelege-section">
+                <div class="container">
+                    <ul class="privelege dFlex aifs jcsb">
+                        <li class="privelegeItem">
+                            <div class="privelegeItemImg">
+                                <img src="./assets/img/icons/icon-hands.svg" alt="icon-hands">
+                            </div>
+                            <h6 class="privelegeItemTitle">
+                                7 Лет на рынке
+                            </h6>
+                            <p class="privelegeItemText">
+                                Нашей компании 7 лет, нам можно доверять и можно проверить
+                            </p>
+                        </li>
+                        <li class="privelegeItem">
+                            <div class="privelegeItemImg">
+                                <img src="./assets/img/icons/icon-bag.svg" alt="icon-bag">
+                            </div>
+                            <h6 class="privelegeItemTitle">
+                                Любые задачи
+                            </h6>
+                            <p class="privelegeItemText">
+                                Заказывайте работу, как физическое лицо или юридическое
+                            </p>
+                        </li>
+                        <li class="privelegeItem">
+                            <div class="privelegeItemImg">
+                                <img src="./assets/img/icons/icon-rub.svg" alt="icon-rub">
+                            </div>
+                            <h6 class="privelegeItemTitle">
+                                Документооборот
+                            </h6>
+                            <p class="privelegeItemText">
+                                Пополняйте баланс наличными или по счету
+                            </p>
+                        </li>
+                        <li class="privelegeItem">
+                            <div class="privelegeItemImg">
+                                <img src="./assets/img/icons/icon-list.svg" alt="icon-list">
+                            </div>
+                            <h6 class="privelegeItemTitle">
+                                7 Лет на рынке
+                            </h6>
+                            <p class="privelegeItemText">
+                                При оплате по счету предоставим все закрывающие документы
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="calculator-section">
+                <div class="container">
+                    <div class="calculator">
+                        <div class="calculatorTop dFlex">
+                            <h2 class="titleSection">
+                                Выберите сумму <br> и узнайте скидку
+                            </h2>
+                            <p class="calculatorTopText">
+                                После регистрации Вы <br> сможете пополнить <br> баланс в личном кабинете.
+                            </p>
+                            <p class="calculatorTopText">
+                                Чем выше единовременная <br> сумма пополнения, тем <br> выше скидка (до 10%).
+                            </p>
+                        </div>
+                        <div class="calculatorMain dFlex aife jcsb">
+                            <div class="calculatorItem">
+                                <span class="calculatorItemLabel">
+                                    Я оплачиваю
+                                </span>
+                                <div class="calculatorItemInput">
+                                    <span class="calculatorItemCount">100 547 </span>руб.
+                                </div>
+                            </div>
+                            <div class="calculatorItem">
+                                <span class="calculatorItemLabel">
+                                    По ставке
+                                </span>
+                                <div class="calculatorItemInput">
+                                    <span class="calculatorItemCount">900 </span>руб./час
+                                </div>
+                            </div>
+                            <div class="calculatorItem">
+                                <span class="calculatorItemLabel">
+                                    Получаю
+                                </span>
+                                <div class="calculatorItemInput">
+                                    <span class="calculatorItemCount">111 </span>часов</span>
+                                </div>
+                            </div>
+                            <div class="calculatorItem">
+                                <span class="calculatorItemLabel">
+                                    Скидка
+                                </span>
+                                <div class="calculatorItemDiscount">
+                                    10%
+                                </div>
+                            </div>
+                            <div class="calculatorItem">
+                                <button class="btn calcBtn bg-green">
+                                    Зарегистрироваться
+                                </button>
+                            </div>
+                            <div class="calculatorRangeWrap">
+                                <input type="range" name="calc" id="calculatorRange">
+                            </div>
+                        </div>
+                        <div class="calculatorBottom dFlex aic jcsa">
+                            <span>
+                                1000 руб.
+                            </span>
+                            <span>
+                                20 000 руб.
+                            </span>
+                            <span>
+                                50 000 руб.
+                            </span>
+                            <span>
+                                70 000 руб.
+                            </span>
+                            <span>
+                                100 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="feedback-section bg-green">
                 <div class="container">
                     <div class="feedback">
