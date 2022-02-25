@@ -612,7 +612,7 @@ ANCHOR Page Main
     z-index: 1;
 }
 
-.mainWrapper .wrapper {
+.page-main .wrapper {
     padding: 73px 0 0 0;
 }
 
@@ -1961,4 +1961,54 @@ ANCHOR (Section - Calculator)
     bottom: -50px;
     font-weight: 500;
     font-size: 11px;
+}
+
+/* 
+ANCHOR Page executant 
+ANCHOR (Section - executant header) 
+*/
+
+.page-executant .topOffer {
+    padding-top: 142px;
+}
+
+.page-executant p.desc {
+    margin: 12px 0 28px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.page-executant p.desc span {
+    color: var(--color-1);
+}
+
+.page-executant .topOffer .btn {
+    font-weight: 600;
+    font-size: 16px;
+    height: 60px;
+}
+
+.executantWork {
+    margin-top: -55px;
+}
+
+.executantWorkList {
+    margin-top: 40px;
+}
+
+.executantWorkItem {
+    width: 29%;
+}
+
+.executantWorkContent {
+    padding-top: 7px;
+}
+
+.executantWorkIcon {
+    margin-right: 25px;
+}
+
+.executantWorkItemTitle {
+    font-size: 18px;
+    margin-bottom: 25px;
 }
