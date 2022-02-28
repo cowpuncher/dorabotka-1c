@@ -1316,6 +1316,26 @@ ANCHOR (Section-How work)
     padding-top: 40px;
 }
 
+.howWorkTitle {
+    position: relative;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 48px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 440px;
+    margin-right: 50px;
+}
+
+.howWorkTitle:after {
+    content: url(../img/icons/arrow-tree.svg);
+    
+}
+
 .howWorkBg {
     position: absolute;
     left: -30%;
@@ -1343,6 +1363,10 @@ ANCHOR (Section-How work)
             box-shadow: var(--box-shadow-4);
 }
 
+.page-executant .howWork:before {
+    height: 115%;
+}
+
 .howWorkList {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1352,6 +1376,7 @@ ANCHOR (Section-How work)
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 27px;
+    width: 100%;
 }
 
 .howWorkItem {
@@ -1361,8 +1386,28 @@ ANCHOR (Section-How work)
     width: 25%;
 }
 
+.page-executant .howWorkItem {
+    width: 30%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.page-executant .howWork .btn {
+    padding: 17px 25px;
+}
+
 .howWorkItem:last-of-type {
     padding-left: 55px;
+}
+
+.howWorkItem p {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.page-executant  .howWorkItem:last-of-type {
+    padding-left: 0;
 }
 
 .howWorkItem:not(:last-child)::after {
@@ -1385,6 +1430,55 @@ ANCHOR (Section-How work)
     -webkit-border-radius: var(--border-radius-2);
        -moz-border-radius: var(--border-radius-2);
             border-radius: var(--border-radius-2);
+}
+
+.howWorkWithBottom .howWorkList,
+.howWorkBottom {
+    position: relative;
+}
+
+.howWorkWithBottom .howWorkList {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.howWorkWithBottom {
+    margin-top: 8px;
+}
+
+.howWorkWithBottom .howWorkList:after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 1px;
+    position: absolute;
+    background: #EDEDED;
+    bottom: 0;
+    left: -40px;
+}
+
+.howWorkWithBottom .howWorkItem {
+    margin-top: 0;
+}
+
+.page-executant .howWorkWithBottom:before {
+    height: 100%;
+}
+
+.howWorkBottomContent {
+    margin-left: 47px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 39%;
+    line-height: 150%;
+}
+
+.howWorkBottomContent .btn {
+    margin: 30px 0 0 30px;
+}
+
+.howWorkBottomImg img {
+    display: block;
 }
 
 /* 
@@ -1719,12 +1813,13 @@ ANCHOR (Section-Product Review)
     background-position: 0 23%;
 }
 
-
+.page-executant .reviewSlider .swiper-slide,
 .page-product .reviewSlider .swiper-slide {
     padding-left: 115px;
     position: relative;
 }
 
+.page-executant .reviewSlider .quote,
 .page-product .reviewSlider .quote {
     position: absolute;
     left: 0;
@@ -1735,6 +1830,7 @@ ANCHOR (Section-Product Review)
     padding-bottom: 75px;
 }
 
+.page-executant .reviewSlider .swiper-slide,
 .page-product .reviewSlider .swiper-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1988,6 +2084,10 @@ ANCHOR (Section - executant header)
     height: 60px;
 }
 
+.page-executant .review {
+    padding: 100px 0 0;
+}
+
 .executantWork {
     margin-top: -55px;
 }
@@ -2011,4 +2111,34 @@ ANCHOR (Section - executant header)
 .executantWorkItemTitle {
     font-size: 18px;
     margin-bottom: 25px;
+}
+
+.aboutMoney-section {
+    padding-top: 405px;
+    margin-top: -405px;
+}
+
+.aboutMoneyBtn {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px 40px;
+    display: inline-block;
+    -webkit-border-radius: var(--border-radius-2);
+       -moz-border-radius: var(--border-radius-2);
+            border-radius: var(--border-radius-2);
+}
+
+.aboutMoneyContent {
+    padding-top: 70px;
+}
+
+.aboutMoneyTitle {
+    margin-bottom: 20px;
+}
+
+.aboutMoneyDesc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 23px;
 }
