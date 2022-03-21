@@ -310,6 +310,161 @@ input[type=range]:focus::-ms-fill-upper {
     opacity: 1;
 }
 
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* 
+ANCHOR Table style 
+*/
+
+.table {
+    font-size: 16px;
+} 
+
+.fooicon-sort:before {
+    content: url(../img/icons/arrow-green.svg);
+}
+
+.fooicon-sort-desc:before,
+.fooicon-sort-asc:before {    
+    content: url(../img/icons/arrow-green.svg);
+}
+
+.footable-sortable.footable-asc span {
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+
+}
+
+td.footable-sortable>span.fooicon, th.footable-sortable>span.fooicon {
+    opacity: 1;
+}
+
+.footable.table>tbody>tr>td {
+    border-top: 1px solid rgb(255 255 255 / 20%);
+    padding: 21px 20px 21px 0;
+    vertical-align: middle;
+}
+
+
+
+.footable-details.table>thead>tr>td, .footable-details.table>thead>tr>th, .footable.table>thead>tr>td, .footable.table>thead>tr>th {
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+
+.label-td {
+    padding: 10px;
+    font-size: 14px;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+} 
+
+.write-off {
+    background: #FF5959;
+}
+
+.new {
+    background: #00AFDC;
+}
+
+.hold {
+    color: #464646;
+    background: #C3E14A;
+}
+
+.progress {
+    background: #FF5252;
+}
+
+.completed {
+    background: #1A6AB3;
+}
+
+.finished {
+    background: #1AB394;
+}
+
+.write-off_price {
+    color: #FF5959;
+}
+
+.admission {
+    background: #1AB394;
+}
+
+.more {
+    border-bottom: 1px solid;
+}
+
+.more,
+.admission_price {
+    color: #1AB394;
+}
+
+.table .date {
+    display: block;
+    opacity: .5;
+}
+
+
+/* 
+ANCHOR Table style 
+*/
+
+.orderBlank {
+    color: var(--color-4);
+    padding: 30px 20px;
+    -webkit-border-radius: var(--border-radius-1);
+       -moz-border-radius: var(--border-radius-1);
+            border-radius: var(--border-radius-1);
+}
+
+.orderBlank .titleOrder {
+    font-weight: 800;
+    margin: 0;
+    font-size: 30px;
+}
+
+.labelOuter {
+    font-weight: 500;
+    font-size: 12px;    
+}
+
+.addFile {
+    font-weight: 500;
+    font-size: 16px;
+    border-bottom: 1px solid;
+    color: var(--color-1);
+}
+
+.orderInput {
+    background: #FFFFFF;
+    font-weight: 500;
+    color: var(--color-4);
+    font-size: 16px;
+    border: 1px solid #E6E6E6;
+    padding: 17px 26px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+
+textarea.orderInput {
+    width: 100%;
+    resize: none;
+    min-height: 130px;
+
+}
+
 /* 
 ANCHOR Buttons style 
 */
@@ -385,6 +540,24 @@ ANCHOR Input style
 input:-internal-autofill-selected {
     background-color: #ffffff!important;
     color: var(--color-4)!important;
+}
+
+/* 
+ANCHOR Forms style
+*/
+
+.formChangePassword  .inputWrapper,
+.formProfile .inputWrapper {
+    padding: 15px 26px;
+    margin-bottom: 30px;
+}
+
+.formProfile .inputWrapper {
+    width: 49%;
+}
+
+.formChangePassword .inputWrapper {
+    width: 32%;
 }
 
 /* 
@@ -2195,6 +2368,9 @@ ANCHOR (Section - executant header)
 /* 
 ANCHOR Page profile 
 */
+.profile-section {
+    margin-top: 95px;
+}
 
 .profile {
     width: 100%;

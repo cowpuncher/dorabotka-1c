@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/lib/footable/css/footable.standalone.css">
+    <link rel="stylesheet" href="./assets/lib/footable/css/footable.standalone.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
@@ -69,13 +71,13 @@
                 <div class="container">
                     <div class="wrapperProfile dFlex aifs">
                         <div class="sidebar dFlex fdc ">
-                            <a href="/profile.html" class="active">
+                            <a href="/profile.html">
                                 Профиль
                             </a>
                             <a href="#">
                                 Пополнить баланс
                             </a>    
-                            <a href="/history.html" >
+                            <a href="/history.html"  class="active">
                                 История платежей
                             </a>
                             <a href="#">
@@ -85,7 +87,7 @@
                         <div class="profile">
                             <div class="wrapper dFlex aic mb-30">
                                 <h2 class="titleProfile">
-                                    Профиль
+                                    История платежей
                                 </h2>
                                 <div class="balanceProfile">
                                     Балланс: 
@@ -97,61 +99,76 @@
                                     Пополнить баланс
                                 </a>
                             </div>
-                            <form action="" class="formProfile dFlex aifs fww jcsb mb-30">
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="name" class="label">
-                                        Ваше имя
-                                    </label>
-                                    <input type="text" name="name" class="input" placeholder="Василий" >
-                                </div>
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="subname" class="label">
-                                        Фамилия
-                                    </label>
-                                    <input type="text" name="subname" class="input" placeholder="Константинопольский" >
-                                </div>
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="phone" class="label">
-                                        Ваш телефон
-                                    </label>
-                                    <input type="tel" name="phone" class="input" placeholder="+7 (495) 123 45 67" >
-                                </div>
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="email" class="label">
-                                        Эл. адрес
-                                    </label>
-                                    <input type="email" name="email" class="input" placeholder="vasiliy_t@gmail.com" >
-                                </div>
-                                <button class="btn bg-green button-sm btnSave">
-                                    Сохранить
-                                </button>
-                            </form>
-                            <h2 class="titleProfile mb-30">
-                                Сменить пароль
-                            </h2>
-                            <form action="" class="formChangePassword dFlex aifs fww jcsb mb-30">
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="phone" class="label">
-                                        Старый пароль
-                                    </label>
-                                    <input type="password" name="phone" class="input" placeholder="***************" >
-                                </div>
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="phone" class="label">
-                                        Новый пароль
-                                    </label>
-                                    <input type="password" name="phone" class="input" placeholder="***************" >
-                                </div>
-                                <div class="inputWrapper dFlex fdc aifs">
-                                    <label for="phone" class="label">
-                                        Подтвердить пароль
-                                    </label>
-                                    <input type="password" name="phone" class="input" placeholder="***************" >
-                                </div>
-                                <button class="btn bg-green button-sm btnSave">
-                                    Сохранить
-                                </button>
-                            </form>
+                            <table class="table" data-sorting="true">
+                                <thead>
+                                    <tr>
+                                        <th data-breakpoints="xs" data-type="number">№</th>
+                                        <th>Тип</th>
+                                        <th data-breakpoints="xs sm" data-type="date" data-format-string="MMMM Do YYYY">Дата</th>
+                                        <th data-breakpoints="xs">Описание</th>                                        
+                                        <th data-breakpoints="xs sm md" data-type="date" data-format-string="MMMM Do YYYY">Сумма</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>232414</td>
+                                        <td><span class="write-off label-td">Списание</span></td>
+                                        <td>14.10.2016, <span class="date">15:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="write-off_price">- 150 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232414</td>
+                                        <td><span class="admission label-td">Поступление</span></td>
+                                        <td>14.10.2016, <span class="date">15:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="admission_price">+ 15 000 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232414</td>
+                                        <td><span class="write-off label-td">Списание</span></td>
+                                        <td>15.10.2016, <span class="date">17:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="write-off_price">- 150 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232415</td>
+                                        <td><span class="admission label-td">Поступление</span></td>
+                                        <td>15.10.2016, <span class="date">18:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="admission_price">+ 15 000 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232415</td>
+                                        <td><span class="admission label-td">Поступление</span></td>
+                                        <td>15.10.2016, <span class="date">15:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="admission_price">+ 15 000 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232415</td>
+                                        <td><span class="admission label-td">Поступление</span></td>
+                                        <td>15.10.2016, <span class="date">15:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="admission_price">+ 15 000 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232415</td>
+                                        <td><span class="admission label-td">Поступление</span></td>
+                                        <td>15.10.2016, <span class="date">15:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #2370722</td>
+                                        <td><span class="admission_price">+ 15 000 руб</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>232415</td>
+                                        <td><span class="admission label-td">Поступление</span></td>
+                                        <td>15.10.2016, <span class="date">15:31:10</span></td>
+                                        <td>Резерв для оплаты оператору по заказу #23707</td>
+                                        <td><span class="admission_price">+ 15 000 руб</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
                         </div>
                     </div>
                 </div>
@@ -331,5 +348,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./assets/lib/footable/js/footable.js"></script>
+    <script src="./assets/lib/footable/js/footable.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

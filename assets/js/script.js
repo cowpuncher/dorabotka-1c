@@ -65,3 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
  }, false);
 
 
+jQuery(function($){
+    $('.table').footable();
+});
+
