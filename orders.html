@@ -74,13 +74,13 @@
                             <a href="/profile.html">
                                 Профиль
                             </a>
-                            <a href="#">
+                            <a href="/balance.html">
                                 Пополнить баланс
                             </a>    
-                            <a href="/history.html"  class="active">
+                            <a href="/history.html" >
                                 История платежей
                             </a>
-                            <a href="#">
+                            <a href="/orders.html" class="active">
                                 Мои заказы
                             </a>
                         </div>
@@ -164,10 +164,35 @@
                                     Описание
                                 </div>
                                 <textarea  class="orderInput" name="orderDesc" id="orderDesc" placeholder="Текст...."></textarea>
-                                <label for="orderFile" class="addFile">
+                            
+                                <div class="wrapperAddFile">
+                                    <ul id="uploadImagesList">
+                                        <li class="item template">
+                                            <span class="img-wrap">
+                                                <img src="image.jpg" alt="">
+                                            </span>
+                                            <span class="delete-link" title="Удалить">
+                                                <img src="./assets/img/icons/close.svg" alt="close">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <label for="orderFile" class="addFile">
+                                        <img src="./assets/img/icons/clip.svg" alt="clip" class="addFileImg">
+                                        <input type="file" id="addImages" name="orderFile" multiple="">
+                                       <span>
+                                            Прикрепить файлы
+                                       </span>
+                                    </label>
+                                    
+     
+                                    <input type="hidden" name="azaza" value="zazaza">
+                                    
+                                    <div class="clear"></div>
+                                </div>                                                       
+                                <!--<label for="orderFile" class="addFile">
                                     <input type="file" name="orderFile" id="orderFile">
                                    Прикрепить файл
-                                </label>
+                                </label>-->
                                 <button class="btn bg-green button-sm">Отправить</button>
                             </form>
                         </div>
@@ -350,8 +375,14 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Добавление файла  -->
+    <script src="./assets/lib/fileapi/FileAPI.min.js"></script>
+    <script src="./assets/lib/fileapi/FileAPI.exif.js"></script>
+    <script src="./assets/lib/fileapi/jquery.fileapi.min.js"></script>
+    <!-- Фильтр таблицы -->
     <script src="./assets/lib/footable/js/footable.js"></script>
     <script src="./assets/lib/footable/js/footable.min.js"></script>
+    
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
