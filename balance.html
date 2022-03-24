@@ -74,13 +74,13 @@
                             <a href="/profile.html">
                                 Профиль
                             </a>
-                            <a href="/balance.html">
+                            <a href="/balance.html" class="active">
                                 Пополнить баланс
                             </a>    
                             <a href="/history.html" >
                                 История платежей
                             </a>
-                            <a href="/orders.html" class="active">
+                            <a href="/orders.html">
                                 Мои заказы
                             </a>
                         </div>
@@ -89,7 +89,7 @@
                                 <h2 class="titleProfile">
                                     Пополнить баланс
                                 </h2>
-                                <div class="balanceProfile">
+                                <div class="balanceProfile m-0">
                                     Балланс: 
                                     <span>
                                         2000
@@ -100,14 +100,16 @@
                             <div class="calculator">
                                 <div class="calculatorTop dFlex">
                                     <h2 class="titleSection">
-                                        Выберите сумму <br> и узнайте скидку
+                                        Выберите сумму оплаты
                                     </h2>
-                                    <p class="calculatorTopText">
-                                        После регистрации Вы <br> сможете пополнить <br> баланс в личном кабинете.
-                                    </p>
-                                    <p class="calculatorTopText">
-                                        Чем выше единовременная <br> сумма пополнения, тем <br> выше скидка (до 10%).
-                                    </p>
+                                    <div class="calculatorTopButtons">
+                                        <a href="#" class="btn balanceBtn active">
+                                            Картой
+                                        </a>
+                                        <a href="#" class="btn balanceBtn">
+                                            По счету
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="calculatorMain dFlex aife jcsb">
                                     <div class="calculatorItem">
@@ -115,7 +117,7 @@
                                             Я оплачиваю
                                         </span>
                                         <div class="calculatorItemInput">
-                                            <span class="calculatorItemCount">100 547 </span>руб.
+                                            <span class="calculatorItemCount">5000 </span>руб.
                                         </div>
                                     </div>
                                     <div class="calculatorItem">
@@ -131,15 +133,7 @@
                                             Получаю
                                         </span>
                                         <div class="calculatorItemInput">
-                                            <span class="calculatorItemCount">111 </span>часов</span>
-                                        </div>
-                                    </div>
-                                    <div class="calculatorItem">
-                                        <span class="calculatorItemLabel">
-                                            Скидка
-                                        </span>
-                                        <div class="calculatorItemDiscount">
-                                            10%
+                                            <span class="calculatorItemCount calculatorItemCountTake">6 </span>часов</span>
                                         </div>
                                     </div>
                                     <div class="calculatorItem">
@@ -148,7 +142,7 @@
                                         </button>
                                     </div>
                                     <div class="calculatorRangeWrap">
-                                        <input type="range" name="calc" id="calculatorRange">
+                                        <input min="20" value="100" max="2000" type="range" name="calc" id="calculatorRange">
                                     </div>
                                 </div>
                                 <div class="calculatorBottom dFlex aic jcsa">

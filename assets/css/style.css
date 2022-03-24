@@ -121,7 +121,7 @@ input[type=range]::-webkit-slider-thumb {
             border-radius: 3px;
     background: #1ab394;
     cursor: pointer;
-    margin-top: -14px; 
+    margin-top: -20px; 
     -webkit-box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
             box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394; 
 }
@@ -149,7 +149,7 @@ input[type=range]::-ms-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 10px;
+    height: 4px;
     cursor: pointer;
     -webkit-box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
             box-shadow: 1px 1px 1px #1ab394, 0px 0px 1px #1ab394;
@@ -691,6 +691,43 @@ ANCHOR Sidebar style
     font-size: 16px;
     color: var(--color-4);
     padding: 23px 0 23px 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.sidebar .count {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #464646;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 11px;
 }
 
 .sidebar a.active,
@@ -2478,7 +2515,7 @@ ANCHOR (Section - executant header)
 ANCHOR Page profile 
 */
 .profile-section {
-    margin-top: 72px;
+    padding: 72px 0 60px;
 }
 
 .profile {
@@ -2501,4 +2538,72 @@ ANCHOR Page profile
 .balanceProfile span {
     color: var(--color-1);
     font-weight: 800;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.profile-section .calculator {
+    margin: 0;
+}
+
+.profile-section .calculatorMain {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.profile-section .calculatorMain .calculatorItem:nth-child(4) {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.calculatorTopButtons {
+    margin-left: auto;
+    width: 270px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkaliit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    overflow: hidden;
+    -webkit-border-radius: var(--border-radius-2);
+       -moz-border-radius: var(--border-radius-2);
+            border-radius: var(--border-radius-2);
+}
+
+.calculatorTopButtons .balanceBtn {
+    padding: 12px 26px;
+    background: #fff;
+    color: #464646;
+    font-weight: 600;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.calculatorTopButtons .balanceBtn:hover,
+.calculatorTopButtons .balanceBtn.active {
+    background: var(--color-1);
+    color: var(--color-3);
 }
